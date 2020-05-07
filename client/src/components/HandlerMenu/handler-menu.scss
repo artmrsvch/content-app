@@ -1,0 +1,23 @@
+.aside-bar {
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+  width: 300px;
+  min-height: 40px;
+  background-color: $green;
+  color: $background;
+  box-sizing: border-box;
+  padding: 0 10px;
+  border-radius: 8px;
+  text-align: center;
+  @include center;
+
+  &_red {
+    background-color: red;
+    color: $liColor;
+  }
+}
+.aside-bar__message {
+  font-size: 18px;
+  font-weight: bold;
+}

@@ -1,0 +1,36 @@
+.workspace-header {
+  height: 60px;
+  width: 100%;
+  background-color: $liBackground;
+}
+.header-container {
+  @include between;
+  width: 100%;
+  height: 100%;
+}
+.logo {
+  color: $liColor;
+  font-size: 30px;
+}
+.header-nav__list {
+  @include center;
+}
+.header-nav__item {
+  margin-right: 20px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.header-nav__link {
+  font-size: 20px;
+  font-weight: 700;
+  color: $liColor;
+}
+.logo-wrapper {
+  width: 44px;
+  height: 44px;
+}
+.logo {
+  width: 100%;
+  height: 100%;
+}

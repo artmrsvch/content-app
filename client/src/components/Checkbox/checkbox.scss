@@ -1,0 +1,38 @@
+.checkbox-label {
+  display: flex;
+  align-items: center;
+}
+.form-checkbox {
+  display: none;
+}
+.checkbox-style {
+  display: inline-block;
+  width: rem(25px);
+  height: rem(25px);
+  box-sizing: border-box;
+  border-radius: 3px;
+  border: 2px solid $liColor;
+  cursor: pointer;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 23%;
+    left: 20%;
+    width: rem(11px);
+    height: rem(6px);
+    border-bottom: $green 3px solid;
+    border-left: $green 3px solid;
+    transform: scale(0);
+  }
+}
+.form-checkbox:checked + .checkbox-style::before {
+  transition: 0.2s;
+  transform: rotate(315deg) scale(1);
+  border-bottom: $liBackground 3px solid;
+  border-left: $liBackground 3px solid;
+}
+.form-checkbox:checked + .checkbox-style {
+  background: $liColor;
+}

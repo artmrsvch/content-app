@@ -1,0 +1,1 @@
+const loadProduct = require('./server/controller/loadProduct')

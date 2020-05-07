@@ -1,0 +1,128 @@
+.user-info-wrapper {
+  @include between;
+  width: 100%;
+  height: 500px;
+}
+.user-about {
+  background-color: $liBackground;
+  width: 400px;
+  height: 100%;
+  border-radius: 15px;
+  box-sizing: border-box;
+  padding: 20px 10px;
+  @include col-between;
+  color: $liColor;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.user-about__name {
+  font-size: 25px;
+}
+.user-work-info {
+  @include col-center;
+
+  &__products {
+    margin-bottom: 10px;
+  }
+  &__errors {
+    margin-bottom: 10px;
+  }
+  &__paid {
+    margin-bottom: 5px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.loadable-value {
+  color: $yellow;
+  &__red {
+    color: red;
+  }
+  &__green {
+    color: $green;
+  }
+}
+
+// WORK_INFO
+.job-info {
+  @include col-between;
+  flex: 1;
+  height: 100%;
+  background-color: $liBackground;
+  border-radius: 15px;
+  box-sizing: border-box;
+  padding: 20px 10px;
+}
+.job-info__title {
+  color: $liColor;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.job-main {
+  width: 100%;
+  height: 100%;
+  @include between;
+}
+.job-info__role-user {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  height: 100%;
+}
+.user-instruction-list {
+  height: 100%;
+  width: 100%;
+  // border: 1px solid royalblue;
+  &__item {
+    @include between;
+    margin-bottom: 15px;
+    color: $liColor;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    font-size: 18px;
+  }
+}
+.user-instruction-list__href {
+  text-decoration: underline;
+  color: $yellow;
+}
+.products-inWork {
+  color: $liColor;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  &__int {
+    color: $yellow;
+  }
+}
+.profile-getProducts__title {
+  font-size: 18px;
+  color: $liColor;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.profile-getProducts {
+  @include col-between;
+  justify-content: flex-start;
+  height: 100%;
+  width: 100%;
+}
+
+.profile-getProducts__input {
+  background-color: $liColor;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 0 5px;
+  width: 100%;
+}
+.profile-getProducts__btn {
+  margin-top: 10px;
+}
+// READY ATTR
+.user-attr {
+  height: 100%;
+  display: flex;
+  flex: 1;
+}
